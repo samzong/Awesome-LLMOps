@@ -239,3 +239,56 @@
 * **[Ludwig](https://github.com/ludwig-ai/ludwig)**: Low-code framework for building custom LLMs, neural networks, and other AI models. ![Stars](https://img.shields.io/github/stars/ludwig-ai/ludwig.svg?style=flat&color=green) ![Contributors](https://img.shields.io/github/contributors/ludwig-ai/ludwig?color=green) ![LastCommit](https://img.shields.io/github/last-commit/ludwig-ai/ludwig?color=green)
 * **[MaxText](https://github.com/google/maxtext)**: A simple, performant and scalable Jax LLM! ![Stars](https://img.shields.io/github/stars/google/maxtext.svg?style=flat&color=green) ![Contributors](https://img.shields.io/github/contributors/google/maxtext?color=green) ![LastCommit](https://img.shields.io/github/last-commit/google/maxtext?color=green)
 * **[MLX](https://github.com/ml-explore/mlx)**: MLX: An array framework for Apple silicon. ![Stars](https://img.shields.io/github/stars/ml-explore/mlx.svg?style=flat&color=green) ![Contributors](https://img.shields.io/github/contributors/ml-explore/mlx?color=green) ![LastCommit](https://img.shields.io/github/last-commit/ml-explore/mlx?color=green)
+
+## Using the Makefile
+
+This project includes a Makefile to simplify landscape operations. The following commands are available:
+
+### Installation
+
+```bash
+# Install landscape2 tool (detected automatically based on your OS)
+make install
+```
+
+### Validation
+
+```bash
+# Validate data, settings, and guide files
+make validate
+```
+
+### Building
+
+```bash
+# Build the landscape website
+make build
+```
+
+### Serving Locally
+
+```bash
+# Serve the landscape website locally at http://127.0.0.1:8000
+make serve
+```
+
+### Complete Workflow
+
+```bash
+# Run the complete workflow: install, validate, build, and serve
+make run
+```
+
+### Docker-based Alternatives
+
+For CI/CD or if you prefer not to install landscape2 locally:
+
+```bash
+# Build using Docker
+make docker-build
+
+# Serve using Docker
+make docker-serve
+```
+
+For more details on landscape2, visit the [landscape2 repository](https://github.com/cncf/landscape2).
